@@ -133,11 +133,12 @@
       }
     }
 
-    panels.forEach(panel => panel.addEventListener('mouseover', toggleOpen, false));
+    // created hover listener. Did not fit well with this project
+    // panels.forEach(panel => panel.addEventListener('mouseover', toggleOpen, false));
     // panels.forEach(panel => panel.addEventListener('mouseout', toggleActive, false));
 
-    // panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-    // panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
   </script>
 
 
